@@ -87,3 +87,4 @@ export class Server{
 }
 
 export type handler<I,O> = (call:call.Call<call.untyped<I, O>>)=>Promise<void>
+export default Server
