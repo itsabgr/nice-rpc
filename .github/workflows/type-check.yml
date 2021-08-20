@@ -1,5 +1,5 @@
 
-name: Typescript check
+name: Typescript
 
 on:
   push:
