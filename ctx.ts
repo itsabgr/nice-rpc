@@ -12,7 +12,7 @@ export class Ctx {
   }
 
   get error() {
-    if (!this.closed) {
+    if (!this.closed as string) {
       return undefined
     }
     return this.#error
