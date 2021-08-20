@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [14.17.X]
     
     steps:
     - uses: actions/checkout@v2
@@ -20,7 +20,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Test
+    - name: npm
       run: |
         npm install
+    - name: test
+      run: |
         tsc --noEmit
